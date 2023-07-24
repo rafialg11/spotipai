@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #191919;
+}
+
+header {
+    height: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 10px;
+    color: whitesmoke; /* Adjust the text color as needed */
+    cursor: pointer;
+    transition: color 0.5s;
+    font-weight: 500;
+    background-color: #333;
+    vertical-align: middle;
+}
+
+nav ul li i {
+    margin-right: 10px;
+    font-size: larger;
+    background-color: #333;
+}
+
+/* Add a hover effect on navigation links */
+nav ul li:hover {
+    color: #00962d; /* Adjust the hover background color as needed */
+}
+
+/* Position the side navigation */
+nav {
+    position: fixed;
+    padding: 40px 20px;
+    top: 0;
+    left: 0;
+    width: 200px; 
+    height: 100%; 
+    background-color: #333;
+    z-index: 10;
+    border-radius: 0 20px 20px 0;
+}
+
+.up-nav{
+    border-bottom: rgba(245, 245, 245, 0.49) solid 0.5px;
+}
+
+/* Push the main content to the right */
+main {
+    margin-left: 240px; 
+    padding: 20px;
+}
+
+main {
+    color: whitesmoke;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    background-color: #1DB954; /* Spotify's green color */
+    color: #fff; /* Text color */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 20px; /* Add some space at the bottom */
+}
+
+.banner img {
+    max-width: 150px; /* Adjust the image size */
+    border-radius: 8px; /* Rounded corners for the image */
+    margin-left: 20px; /* Add spacing between text and image */
+}
+
+.banner-text {
+    margin-left: 20px; 
+}
+
+.banner h1 {
+    font-size: 28px; 
+    font-weight: bold; 
+    margin-bottom: 10px; 
+}
+
+.banner p {
+    font-size: 18px; 
+    line-height: 1.5; 
+}
+
+.mp-title{
+    border-bottom: rgba(245, 245, 245, 0.49) solid 1px;
+    padding-bottom: 20px;
+}
+
+.song-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    padding: 20px 0;
+}
+
+.song-box {
+    border-radius: 10px;
+    background-color: #333; /* Spotify's song box background color */
+    padding: 15px;
+}
+
+.song-box img {
+    max-width: 100%;
+}
+
+.song-title {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.artists {
+    font-size: 14px;
+    color: #b3b3b3; /* Lighter text color for artists */
+}
+
+.add-button {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #1DB954; /* Spotify's green color */
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
